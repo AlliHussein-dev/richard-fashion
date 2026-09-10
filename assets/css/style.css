@@ -1,0 +1,45 @@
+body { background-color: #f8f9fa; }
+
+.card-produit img {
+  height: 260px;
+  object-fit: cover;
+}
+
+.card-produit {
+  transition: transform 0.15s ease-in-out;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.card-produit:hover { transform: translateY(-4px); }
+
+.hero {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: white;
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.hero-photo {
+  max-height: 480px;
+  width: auto;
+  object-fit: cover;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+  border: 4px solid rgba(255,255,255,0.15);
+}
+
+@media (max-width: 991px) {
+  .hero-photo { max-height: 360px; }
+}
+
+.badge-categorie {
+  font-size: 0.7rem;
+  margin-right: 4px;
+}
+
+.etape-suivi { position: relative; padding-left: 2.5rem; }
+.etape-suivi .cercle {
+  position: absolute; left: 0; top: 0;
+  width: 2rem; height: 2rem; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-weight: bold;
+}
